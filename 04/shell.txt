@@ -1,0 +1,72 @@
+abhishekrajput@Abhisheks-MacBook-Air 01_basic % ls
+__pycache__     hello.py        hello_chai.py
+abhishekrajput@Abhisheks-MacBook-Air 01_basic % python3
+Python 3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("chai aur code")
+chai aur code
+>>> 2*2
+4
+>>> 2+2
+4
+>>> 2+2*(3*6)
+38
+>>> "cai"*4
+'caicaicaicai'
+>>> score = 20
+>>> score = 100
+>>> score = 120
+>>> score
+120
+>>> tea
+Traceback (most recent call last):
+  File "<python-input-9>", line 1, in <module>
+    tea
+NameError: name 'tea' is not defined
+>>> import os
+>>> chai(20)
+Traceback (most recent call last):
+  File "<python-input-11>", line 1, in <module>
+    chai(20)
+    ^^^^
+NameError: name 'chai' is not defined
+>>> os.getcwd()
+'/Users/abhishekrajput/Desktop/Python/01_basic'
+>>> for c in "chai":
+...     print(c)
+...     
+c
+h
+a
+i
+>>> import sys
+>>> sys.platform
+'darwin'
+>>> import hello_chai
+Hello Python..
+Hello Abhishek
+>>> hello_chai.chai("Royal")
+Royal
+>>> hello_chai.chai_one
+Traceback (most recent call last):
+  File "<python-input-18>", line 1, in <module>
+    hello_chai.chai_one
+AttributeError: module 'hello_chai' has no attribute 'chai_one'
+>>> import hello_chai
+>>> hello_chai.chai_one
+Traceback (most recent call last):
+  File "<python-input-20>", line 1, in <module>
+    hello_chai.chai_one
+AttributeError: module 'hello_chai' has no attribute 'chai_one'
+>>> from importlib import reload
+>>> reload
+<function reload at 0x104cae840>
+>>> reload(hello_chai)
+Hello Python..
+Hello Abhishek
+<module 'hello_chai' from '/Users/abhishekrajput/Desktop/Python/01_basic/hello_chai.py'>
+>>> hello_chai.chai_one
+'lemon tea'
+>>> hello_chai.chai_three
+'masala chai'
+>>> 

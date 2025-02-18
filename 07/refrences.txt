@@ -1,0 +1,112 @@
+abhishekrajput@Abhisheks-MacBook-Air Python % python3
+Python 3.13.0 (v3.13.0:60403a5409f, Oct  7 2024, 00:37:40) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.getrefcount(24601)
+3
+>>> sys.getrefcount('abhishek')
+3
+>>> sys.getrefcount('hitesh')
+3
+>>> sys.getrefcount(1)
+4294967295
+>>> sys.getrefcount('a')
+4294967295
+>>> sys.getrefcount(21)
+4294967295
+>>> a = 3
+>>> a = 'chaiaurcode'
+>>> a = 3.14
+>>> a = 5
+>>> b = 2
+>>> a
+5
+>>> b
+2
+>>> a = a + 2
+>>> a
+7
+>>> myListOne = [1,2,3]
+>>> myListTwo = myListOne
+>>> myListOne = 'chai'
+>>> myListTwo
+[1, 2, 3]
+>>> myListOme
+Traceback (most recent call last):
+  File "<python-input-20>", line 1, in <module>
+    myListOme
+NameError: name 'myListOme' is not defined. Did you mean: 'myListOne'?
+>>> myListOne
+'chai'
+>>> myListOne = [1,2,3]
+>>> myListTwo
+[1, 2, 3]
+>>> myListOne
+[1, 2, 3]
+>>> myListOne[0] = 33
+>>> myListOne
+[33, 2, 3]
+>>> myListTwo
+[1, 2, 3]
+
+
+>>> l1 = [1,2,3]
+>>> l2 = l1
+>>> l1
+[1, 2, 3]
+>>> l2
+[1, 2, 3]
+>>> l1[0] = 44
+>>> l1
+[44, 2, 3]
+>>> l2
+[44, 2, 3]
+
+>>> p1 = [1,2,3]
+>>> p2 = p1
+>>> p2 = [1,2,3]
+>>> p1[0] = 55
+>>> p1
+[55, 2, 3]
+>>> p2
+[1, 2, 3]
+
+
+>>> h1 = [1,2,3]
+>>> h2 = h1[:] //copy created
+>>> h1
+[1, 2, 3]
+>>> h2
+[1, 2, 3]
+>>> h1[0] = 55
+>>> h1
+[55, 2, 3]
+>>> h2
+[1, 2, 3]
+
+>>> import copy
+>>> h2 = copy.deepcopy(h1)
+
+>>> n = [1,2,3]
+>>> m = n
+>>> m
+[1, 2, 3]
+>>> n
+[1, 2, 3]
+>>> m == n
+True
+>>> m is n
+True
+
+>>> n = [1,2,3]
+>>> m == n
+True
+
+>>> m = [1,2,3]
+>>> m == n
+True
+>>> m is n
+False
+>>> n is m
+False
+>>> 

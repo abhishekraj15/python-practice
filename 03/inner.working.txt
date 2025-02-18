@@ -1,0 +1,28 @@
+> pyython chai.py
+python code -> Byte Code => Python Vm
+
+
+1. Compile to byte code
+          -> low level & platform Independent
+2. Byte code runs faster
+ .pyc -> compiled python (frozen Binaires)
+ --pycache--
+
+ Source Chnage & Python Version
+
+ hello_chai.cpython-313.pyc
+
+-> Works only for imported files
+-> not for top level files
+
+
+
+
+Python Virtual Machine (PVM)
+1. Code loop to iterate byte code -> line by line that's why known as Interpreter.
+2. Runtime Engine.
+3. Also know as Python Interpreter.
+
+Byte Code is Not Machine Code
+1. Python specific Interpretation.
+2. cpython, jython ,Iron Python, Stackless and pypy
